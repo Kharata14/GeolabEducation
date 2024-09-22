@@ -42,6 +42,8 @@ else
 
 //6. სამი რიცხვიდან ყველაზე დიდის პოვნა
 
+/*
+
 Console.WriteLine("Enter Number 1");
 int number1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Enter Number 2");
@@ -64,3 +66,53 @@ else
     Console.WriteLine("Largest number");    
     Console.WriteLine(number3);
 }
+*/
+
+//7. მარტივი კალკულატორი
+
+/*
+
+Console.WriteLine("Enter Number");
+int number1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter Operator");
+string operation = Console.ReadLine();
+
+Console.WriteLine("Enter number");
+int number2 = int.Parse(Console.ReadLine());
+
+if (operation == "+")
+{
+    Console.WriteLine(number1 + number2);
+}
+else if (operation == "-")
+{
+    Console.WriteLine(number1 - number2);
+}
+else if (operation == "*")
+{
+    Console.WriteLine(number1 * number2);
+}
+else if (operation == "/")
+{
+    Console.WriteLine(number1 / number2);
+}
+
+*/
+
+//8. არჩევნების უფლებამოსილება
+
+Console.WriteLine("Enter your age");
+
+int age = int.Parse(Console.ReadLine());
+
+if (age >= 18)
+{
+    Console.WriteLine("You can participate in the elections");
+}
+else
+{
+    Console.WriteLine("Your age is below 18, You can't participate in the elections");
+}
+
+
