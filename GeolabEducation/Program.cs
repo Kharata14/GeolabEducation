@@ -102,6 +102,8 @@ else if (operation == "/")
 
 //8. არჩევნების უფლებამოსილება
 
+/*
+
 Console.WriteLine("Enter your age");
 
 int age = int.Parse(Console.ReadLine());
@@ -115,4 +117,29 @@ else
     Console.WriteLine("Your age is below 18, You can't participate in the elections");
 }
 
+*/
+
+
+//9.დღის მისალმება საათის მიხედვით
+
+
+
+DateTime currentTime = DateTime.Now;
+
+if(currentTime.Hour >= 5 && currentTime.Hour < 12)
+{
+    Console.WriteLine("Good Morning");
+}
+else if(currentTime.Hour >= 12 && currentTime.Hour < 15)
+{
+    Console.WriteLine("Good Afternoon");
+}
+else if(currentTime.Hour >= 17 && currentTime.Hour < 21)
+{
+    Console.WriteLine("Good Evening");
+}
+else
+{
+    Console.WriteLine("Good Night");
+}
 
