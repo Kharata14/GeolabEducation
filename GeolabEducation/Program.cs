@@ -122,7 +122,7 @@ else
 
 //9.დღის მისალმება საათის მიხედვით
 
-
+/*
 
 DateTime currentTime = DateTime.Now;
 
@@ -142,4 +142,36 @@ else
 {
     Console.WriteLine("Good Night");
 }
+
+*/
+
+//10.შოპინგის ფასდაკლების კალკულატორი
+
+
+decimal cash = decimal.Parse(Console.ReadLine());
+decimal percent;
+
+if (cash <= 0)
+{
+    Console.WriteLine("Enter valid amount");
+}
+else if (cash < 100)
+{
+    Console.WriteLine("No discount");
+}
+else if (cash > 99 && cash < 500)
+{
+    percent = cash * 10 / 100;
+    cash = cash - percent;
+    Console.WriteLine($"Paid money {cash}$");
+    Console.WriteLine($"Discount amount {percent}$");
+}
+else if (cash > 500)
+{
+    percent = cash * 20 / 100;
+    cash = cash - percent;
+    Console.WriteLine($"Paid money {cash}$");
+    Console.WriteLine($"Discount amount {percent}$");
+}
+
 
